@@ -7,12 +7,31 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>questoes</ion-title>
+    <ion-title>Questões</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+
+  <p>
+    Acerca de administração de sistemas Linux, julgue os próximos itens. Com o comando fdisk ?l, é possível limpar (formatar) uma partição completa.
+  </p>
+  <ion-list radio-group [(ngModel)]="relationship">
+    <ion-item>
+      <ion-label>Certo</ion-label>
+      <ion-radio value="Certo" checked></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Errado</ion-label>
+      <ion-radio value="Errado"></ion-radio>
+    </ion-item>
+  </ion-list>
+
+<br>
+
+
+  <button ion-button full (click)="chamarResposta()">Respostas</button>
 
 </ion-content>
