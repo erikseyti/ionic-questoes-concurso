@@ -4,6 +4,9 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
+
+
+
 <ion-header>
 
   <ion-navbar>
@@ -14,20 +17,79 @@
 
 
 <ion-content padding>
-
+<h2>Questão 1:</h2>
   <p>
     Acerca de administração de sistemas Linux, julgue os próximos itens. Com o comando fdisk ?l, é possível limpar (formatar) uma partição completa.
   </p>
-  <ion-list radio-group [(ngModel)]="relationship">
+  <ion-list radio-group [(ngModel)]="questao1">
     <ion-item>
-      <ion-label>Certo</ion-label>
-      <ion-radio value="Certo" checked></ion-radio>
+      <ion-label>Verdadeiro</ion-label>
+      <ion-radio value="Errou"></ion-radio>
     </ion-item>
     <ion-item>
-      <ion-label>Errado</ion-label>
-      <ion-radio value="Errado"></ion-radio>
+      <ion-label>Falso</ion-label>
+      <ion-radio value="Acertou"></ion-radio>
     </ion-item>
   </ion-list>
+
+<h2>Questão 2:</h2>
+  <p>
+    Acerca de administração de sistemas Linux, julgue os próximos itens. Na instalação do Linux, não é aconselhável criar uma partição do tipo swap, pois ela consome muito espaço em disco.
+  </p>
+  <ion-list radio-group [(ngModel)]="questao2">
+    <ion-item>
+      <ion-label>Verdadeiro</ion-label>
+      <ion-radio value="Acertou"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Falso</ion-label>
+      <ion-radio value="Errou"></ion-radio>
+    </ion-item>
+  </ion-list>
+
+  <h2>Questão 3:</h2>
+    <p>
+      Acerca de administração de sistemas Linux, julgue os próximos itens. O comando addgroup é destinado a criar um novo grupo.
+    </p>
+    <ion-list radio-group [(ngModel)]="questao3">
+      <ion-item>
+        <ion-label>Verdadeiro</ion-label>
+        <ion-radio value="Acertou"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Falso</ion-label>
+        <ion-radio value="Errou"></ion-radio>
+      </ion-item>
+    </ion-list>
+
+    <h2>Questão 4:</h2>
+      <p>
+      Acerca de administração de sistemas Linux, julgue os próximos itens. Em algumas distribuições Linux, o comando /etc/init.d/networking restart tem a finalidade de restaurar para as configurações iniciais o serviço de rede, ou seja, para o estado pós-instalação do sistema.
+      </p>
+      <ion-list radio-group [(ngModel)]="questao4">
+        <ion-item>
+          <ion-label>Verdadeiro</ion-label>
+          <ion-radio value="Errou"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>Falso</ion-label>
+          <ion-radio value="Acertou"></ion-radio>
+        </ion-item>
+      </ion-list>
+
+      <h2>Questão 5:</h2>
+        <p>
+      Com relação ao NetBIOS, ao CIDR (Classless Interdomain Routing), ao NAT (Network Address Translator) e às VLANs (Virtual Local Area Network), julgue os próximos itens. O CIDR é uma estratégia de atribuição de nomes de endereços da Internet em que o endereço IP é constituído de 64 bits e dividido em quatro partes, diferentemente dos demais endereçamentos de sub-redes.
+        <ion-list radio-group [(ngModel)]="questao5">
+          <ion-item>
+            <ion-label>Verdadeiro</ion-label>
+            <ion-radio value="Errou"></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label>Falso</ion-label>
+            <ion-radio value="Acertou"></ion-radio>
+          </ion-item>
+        </ion-list>
 
 <br>
 
