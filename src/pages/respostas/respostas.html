@@ -15,10 +15,10 @@
 
 <ion-content padding>
 
-<ion-list>
+<ion-list reorder="true" (ionItemReorder)="reorderItems($event)">
 
 
-  <ion-item *ngFor="let listaResposta of listaRespostas">{{listaResposta}}</ion-item>
+  <ion-item *ngFor="let listaResposta of listaRespostas;let i = index;">Questão {{i+1}} :{{listaResposta}}</ion-item>
 
 
 </ion-list>

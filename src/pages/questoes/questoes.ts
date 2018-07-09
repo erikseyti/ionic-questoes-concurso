@@ -17,11 +17,11 @@ import { Storage } from '@ionic/storage';
 })
 export class QuestoesPage {
 
-private questao1;
-private questao2;
-private questao3;
-private questao4;
-private questao5;
+private questao1="";
+private questao2="";
+private questao3="";
+private questao4="";
+private questao5="";
 public listaResposta=[];
 
   constructor(public navCtrl: NavController, public navParams: NavParams,public storage:Storage) {

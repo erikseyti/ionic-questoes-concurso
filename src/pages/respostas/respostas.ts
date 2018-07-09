@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, reorderArray } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
 
 /**
@@ -19,6 +19,9 @@ export class RespostasPage {
 public listaRespostas=[];
 
   constructor(public navCtrl: NavController, public navParams: NavParams,public storage:Storage) {
+    try
+    {
+
     this.storage.get('questao1').then((q1) =>
     {
       console.log(q1);
@@ -31,8 +34,17 @@ public listaRespostas=[];
     this.storage.get('questao5').then((q5) =>{ this.listaRespostas.push(q5);});
 
     console.log(this.listaRespostas);
+  }
+  catch(err)
+  {
+    alert(err);
+  }
 
   }
+
+  reorderItems(indexes){
+    this.listaRespostas = reorderArray(this.listaRespostas, indexes);
+}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad RespostasPage');
